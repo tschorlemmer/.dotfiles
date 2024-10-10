@@ -17,7 +17,7 @@ set sw=4
 
 " Set up mappings
 let mapleader = " "
-imap jj <Esc>
+imap jk <Esc>
 
 nmap <Leader>d :Ex<Cr>
 nnoremap <C-d> <C-d>zz
