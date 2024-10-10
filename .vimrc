@@ -1,6 +1,5 @@
 " Set up display
 set number relativenumber
-colorscheme pablo
 
 " Configure behavior
 set scrolloff=8
