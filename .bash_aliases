@@ -6,3 +6,6 @@ PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 "(%s)")'; PS1='\[\e[96m\]${PS1_CMD1}\[\e[35
 alias n="nvim"
 alias lg="lazygit"
 
+if [ -f ~/.bash_local ]; then
+    . ~/.bash_local
+fi
