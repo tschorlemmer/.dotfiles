@@ -9,3 +9,8 @@ alias lg="lazygit"
 if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
+
+if command -v fzf 2>&1 >/dev/null
+then
+    source /usr/share/doc/fzf/examples/key-bindings.bash
+fi
