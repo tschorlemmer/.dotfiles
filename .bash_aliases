@@ -14,3 +14,17 @@ if command -v fzf 2>&1 >/dev/null
 then
     source /usr/share/doc/fzf/examples/key-bindings.bash
 fi
+
+# if command -v oh-my-posh
+# then
+#     if [ -f ~/.omp.json ]
+#     then
+#         eval "$(oh-my-posh init bash --config ~/.omp.json)"
+#     else
+#         eval "$(oh-my-posh init bash)"
+#     fi
+# fi
+
+update_sudo_display() {
+    sudo xauth add $(xauth -f ~john/.Xauthority list|tail -1)
+}
