@@ -26,5 +26,6 @@ fi
 # fi
 
 update_sudo_display() {
-    sudo xauth add $(xauth -f ~john/.Xauthority list|tail -1)
+    temp=$(xauth -f ~tschorle/.Xauthority list|tail -1)
+    sudo xauth add $temp
 }
