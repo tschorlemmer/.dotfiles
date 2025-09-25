@@ -16,3 +16,12 @@ Use GNU Stow:
 ```bash
 stow .
 ```
+
+Add this to `.bashrc`:
+
+```bash
+# Load in aliases if it exists
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
+```
